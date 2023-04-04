@@ -1,0 +1,237 @@
+main{
+width: auto;
+}
+
+header img{
+height: 44px;
+text-align: center;
+background: #FFFFFF;
+padding-left: 50px;
+padding-right: 108px;
+padding-top: 5px;
+
+}
+
+.localisation{
+background: #EAEAEA;
+height: 50px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 17px;
+width: 375px;
+}
+
+.localisation i{
+width: 12px;
+height: 16px;
+padding-left: 118,5px;
+}
+
+.localisation span{
+width: 109px;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+padding-left: 147,5px;
+padding-top: 15,5px;
+}
+
+
+.decouverte{
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+text-align: center;
+background: #F7F7F7;
+width: 375px;
+padding-top: 39px;
+padding-bottom: 57px;
+}
+
+.decouverte h1{
+font-weight: 700;
+font-size: 24px;
+width: 275px;
+padding-left: 42px;
+margin: 0%;
+}
+
+.decouverte p{
+font-weight: 300;
+font-size: 18px;
+}
+
+button{
+width: 218px;
+height: 50px;
+background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+border-radius: 25px;
+color: #FFFFFF;
+font-weight: 500;
+font-size: 16px;
+}
+
+button:hover{
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+border-radius: 25px;
+transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.choix, .restaurants h1{
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 700;
+}
+
+.choix h1{
+padding-top: 48px;
+padding-bottom: 26px;
+}
+
+
+.fonctionnements{
+display: flex;
+flex-direction: row;
+background: #F7F7F7;
+width: 322.49px;
+height: 72.38px;
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+border-radius: 20px;
+margin-bottom: 25px;
+}
+
+.chiffre{
+font-weight: 500;
+font-size: 14.1818px;
+background:#9356DC;
+border-radius: 50%;
+color: #FFFFFF;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 7px;
+margin-right: 22px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.fonctionnements i{
+width: 13.02px;
+height: 19.9px;
+padding-top: 9%;
+padding-right: 27px;
+}
+
+.text{
+font-weight: 500;
+font-size: 16px;
+padding-right: 38px;
+padding-top: 10px;
+}
+
+.fa-mobile-screen-button, .fa-list-ul{
+color: #7E7E7E;
+}
+
+.fa-store{
+color: #9356DC;
+}
+
+.restaurants{
+background: #F7F7F7;
+}
+
+.restaurants h1{
+padding-top: 54px;
+padding-left: 20px;
+
+}
+
+.card{
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+width: 340px;
+height: 251px;
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+border-radius: 15px;
+background: #FFFFFF;
+padding-bottom: 20px;
+margin-bottom: 20px;
+margin-left: 10px;
+
+
+}
+
+.card img{
+width: 340px;
+height: 200px;
+border-radius: 15px 15px 0px 0px;
+}
+
+.card h2{
+font-weight: 700;
+font-size: 18px;
+margin: 0%;
+}
+
+.card p{
+font-weight: 100;
+font-size: 17px;
+margin: 0%;
+}
+
+.card span{
+color: #008766;
+background: #99E2D0;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+border-radius: 2px;
+text-align: center;
+width: 80px;
+height: 25px;
+padding-top: 5px;
+}
+
+.badge1{
+position: absolute;
+right: 34px;
+top: 960px;
+}
+
+.badge2{
+position: absolute;
+right: 34px;
+top: 1250px;
+
+}
+
+
+footer{
+display: flex;
+flex-direction: column;
+background: #353535;
+color: #FFFFFF;
+padding-left: 25px;
+height: 186px;
+}
+
+footer h1{
+font-family: 'Shrikhand';
+font-style: italic;
+font-weight: 400;
+font-size: 18px;
+}
+
+footer a{
+flex-direction: row;
+padding-bottom: 7px;
+}
+
+footer i {
+padding-right: 10px;
+}
+
+footer span{
+padding-bottom: 7px;
+}
