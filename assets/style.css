@@ -536,21 +536,25 @@ cursor: pointer;
 width: 50px;
 opacity: 1;
 border-radius: 0 15px 15px 0;
-margin-left: 4px
+margin-left: 2px
 }
 
 .description:active{
 width: 263px;
-transition: transform 0.4s ease-in-out;
+/*transition: transform 0.4s ease-in-out;*/
 }
 
 
 .card2:active{
 overflow: visible;
-transition: transform 0.4s ease-in-out;
+/*transition: transform 0.4s ease-in-out;*/
 }
 
-
+.checkbar:active{
+transition: margin-left 2s;
+opacity: 1;
+margin-left: -50px;
+}
 
 .checkbar i{
 padding-top: 21px;
@@ -560,14 +564,13 @@ font-size: 30px;
 color: white;
 text-align: center;
 align-items: center;
-
 }
 
 .checkbar i:active{
     animation: spin 2s;
 }
 
-    @keyframes spin {
+@keyframes spin {
         0%{
             transform: rotate(-270deg);
         }
@@ -857,6 +860,7 @@ opacity: 0;
 
 .fa-circle-check:hover{
 opacity: 1;
+animation: spin 5s;
 }
 
 .description:hover{
