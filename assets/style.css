@@ -560,8 +560,24 @@ font-size: 30px;
 color: white;
 text-align: center;
 align-items: center;
-transform: rotate(0deg);
+
 }
+
+.checkbar i:active{
+    animation: spin 2s;
+}
+
+    @keyframes spin {
+        0%{
+            transform: rotate(-270deg);
+        }
+    
+        100%{
+            transform: rotate(0deg
+            );
+        }
+        
+    }
 
 
 
@@ -841,14 +857,16 @@ opacity: 0;
 
 .fa-circle-check:hover{
 opacity: 1;
-transform: rotate(0deg);
 }
 
 .description:hover{
 width: 555px;
-transition: transform 0.4s ease-in-out;
 }
 
+.checkbar:active{
+display: unset;
+transition: margin-left 4s;
+}
 
 .commander{
 margin-bottom: 30px;
@@ -917,5 +935,6 @@ from {
 
 
 }
+
 
 }
