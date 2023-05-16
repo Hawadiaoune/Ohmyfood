@@ -73,7 +73,6 @@ justify-content: center;
 align-items: center;
 padding: 0px;
 gap: 17px;
-width: 375px;
 }
 
 .localisation i{
@@ -98,7 +97,6 @@ font-family: 'Roboto', sans-serif;
 font-style: normal;
 text-align: center;
 background: #F7F7F7;
-width: 375px;
 padding-top: 39px;
 padding-bottom: 57px;
 }
@@ -106,9 +104,8 @@ padding-bottom: 57px;
 .decouverte h1{
 font-weight: 700;
 font-size: 24px;
-width: 275px;
-padding-left: 42px;
 margin: 0%;
+text-align: center;
 }
 
 .decouverte p{
@@ -625,9 +622,9 @@ width: auto;
 }
 
 .decouverte h1{
-width: 685px;
+
 font-size: 40px;
-padding-left: 385px;
+text-align: center;
 padding-bottom: 10px;
 }
 
@@ -638,13 +635,9 @@ padding-bottom: 20px;
 .fonction{
 display: flex;
 flex-direction: row;
-gap: 50px;
-margin-left: 200px;
+gap: 20px;
 }
 
-.choix h1{
-padding-left: 190px;
-}
 
 .restaurants{
 height: 900px;
