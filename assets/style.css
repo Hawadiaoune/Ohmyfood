@@ -99,6 +99,7 @@ text-align: center;
 background: #F7F7F7;
 padding-top: 39px;
 padding-bottom: 57px;
+width: auto;
 }
 
 .decouverte h1{
@@ -168,7 +169,7 @@ color: #FFFFFF;
 padding-left: 10px;
 padding-right: 10px;
 padding-top: 7px;
-margin-right: 22px;
+margin-right: 11px;
 margin-top: 20px;
 margin-bottom: 20px;
 }
@@ -177,7 +178,7 @@ margin-bottom: 20px;
 width: 13.02px;
 height: 19.9px;
 padding-top: 9%;
-padding-right: 27px;
+padding-right: 11px;
 }
 
 .text{
@@ -613,8 +614,7 @@ padding-right: 115px;
 
 
 
-
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
 
 main, .decouverte, .localisation, .en-tete{
@@ -622,9 +622,7 @@ width: auto;
 }
 
 .decouverte h1{
-
 font-size: 40px;
-text-align: center;
 padding-bottom: 10px;
 }
 
@@ -635,29 +633,40 @@ padding-bottom: 20px;
 .fonction{
 display: flex;
 flex-direction: row;
-gap: 20px;
+gap: 25px;
+justify-content: space-around;
+/*margin-left: 200px;*/
 }
 
+/*
+.choix h1{
+padding-left: 190px;
+}*/
 
 .restaurants{
-height: 900px;
+height: -moz-available;
+padding-bottom: 50px;
 }
 
+/*
 .restaurants h1{
 padding-left: 190px;
-}
+}*/
+
+
 
 .boite-restaurants{
 display: flex;
 flex-direction: row;
-gap: 96px;
+justify-content: space-around;
+/*gap: 96px;
 flex-wrap: wrap;
-margin-left: 190px;
+margin-left: 190px;*/
 }
 
 .card{
 height: 291px;
-width: 490px;
+width: 22%;
 border-radius: 15px;
 margin-bottom: 0%;
 }
@@ -672,7 +681,7 @@ padding-left: 15px;
 
 .card img{
 height: 231px;
-width: 490px;
+width: -moz-available;
 border-radius: 15px 15px 0px 0px;
 }
 
