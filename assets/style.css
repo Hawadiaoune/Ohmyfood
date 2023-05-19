@@ -1,4 +1,7 @@
                                                     /* PAGEE D'ACCUEIL*/
+
+
+                                               
 main{
 width: auto;
 }
@@ -253,13 +256,13 @@ padding-top: 5px;
 
 .badge1{
 position: absolute;
-right: 34px;
+right: 51px;
 top: 970px;
 }
 
 .badge2{
 position: absolute;
-right: 34px;
+right: 51px;
 top: 1260px;
 }
 
@@ -614,7 +617,7 @@ padding-right: 115px;
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
 
 
 main, .decouverte, .localisation, .en-tete{
@@ -622,6 +625,7 @@ width: auto;
 }
 
 .decouverte h1{
+align-items: center;
 font-size: 40px;
 padding-bottom: 10px;
 }
@@ -633,40 +637,34 @@ padding-bottom: 20px;
 .fonction{
 display: flex;
 flex-direction: row;
-gap: 25px;
-justify-content: space-around;
-/*margin-left: 200px;*/
+gap: 50px;
+margin-left: 200px;
 }
 
-/*
 .choix h1{
 padding-left: 190px;
-}*/
-
-.restaurants{
-height: -moz-available;
-padding-bottom: 50px;
 }
 
-/*
+.restaurants{
+height: auto;
+padding-bottom: 35px;
+}
+
 .restaurants h1{
 padding-left: 190px;
-}*/
-
-
+}
 
 .boite-restaurants{
 display: flex;
 flex-direction: row;
-justify-content: space-around;
-/*gap: 96px;
+gap: 96px;
 flex-wrap: wrap;
-margin-left: 190px;*/
+margin-left: 190px;
 }
 
 .card{
 height: 291px;
-width: 22%;
+width: 490px;
 border-radius: 15px;
 margin-bottom: 0%;
 }
@@ -681,7 +679,7 @@ padding-left: 15px;
 
 .card img{
 height: 231px;
-width: -moz-available;
+width: 490px;
 border-radius: 15px 15px 0px 0px;
 }
 
@@ -775,7 +773,7 @@ opacity: 1;
 
 
 footer{
-height: 114px;
+height: auto;
 }
 
 .pied-de-page-aligné{
@@ -783,7 +781,6 @@ display: flex;
 flex-direction: row;
 align-items: baseline;
 gap: 25px;
-padding-top: 100px;
 }
 
 .pied-de-page-aligné h1{
@@ -942,5 +939,10 @@ from {
 
 }
 
+}
 
+@media (min-width : 1024px) {
+
+
+    
 }
