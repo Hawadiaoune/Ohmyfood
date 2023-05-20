@@ -81,7 +81,6 @@ gap: 17px;
 .localisation i{
 width: 12px;
 height: 16px;
-padding-left: 118px;
 }
 
 .localisation span{
@@ -90,8 +89,6 @@ font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
-padding-left: 147px;
-padding-top: 15px;
 }
 
 
@@ -142,15 +139,39 @@ font-style: normal;
 font-weight: 700;
 }
 
-.choix{
-padding-left: 10px;
+.fonction{
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: space-evenly;
 }
+
 
 .choix h1{
 padding-top: 48px;
 padding-bottom: 26px;
+padding-left: 10px;
 }
 
+.choix{
+padding-left: 35px;
+}
+
+.new{
+position: relative;
+}
+
+.new::before {
+content: "Nouveau";
+position: absolute;
+height: 30px;
+width: 70px;
+background-color: #99E2D0;
+color:  #008766;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+right: 1rem;
+top: -10rem;
+}
 
 .fonctionnements{
 display: flex;
@@ -201,13 +222,24 @@ color: #9356DC;
 
 .restaurants{
 background: #F7F7F7;
-height: 1300px;
-width: auto;
-padding-left: 10px;
+height: auto;
+width: -moz-available;
+padding-left: 35px;
 }
 
 .restaurants h1{
 padding-top: 54px;
+}
+
+.boite-restaurants{
+display: grid;
+grid-template-columns: 1fr ;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.description-card{
+position: relative;
 }
 
 .card{
@@ -254,17 +286,13 @@ height: 25px;
 padding-top: 5px;
 }
 
-.badge1{
+.description-card i{
 position: absolute;
-right: 51px;
-top: 970px;
+left: 300px;
+top: 50%;
+transform: translateY(-50%);
 }
 
-.badge2{
-position: absolute;
-right: 51px;
-top: 1260px;
-}
 
 .fa-heart{
 position: absolute;
@@ -278,56 +306,28 @@ cursor: pointer;
 opacity: 0;
 }
 
-.c1{
-left: 320px;
-top: 1165px;
-}
-
 
 .c1-prime{
-left: 320px;
-top: 1165px;
 opacity: 1;
 color: black;
 }
 
-
-
-.c2{
-left: 320px;
-top: 1455px;
-}
 
 
 .c2-prime{
-top: 1455px;
-left: 320px;
 opacity: 1;
 color: black;
 }
 
-
-.c3{
-left: 320px;
-top: 1749px;
-}
 
 .c3-prime{
-left: 320px;
-top: 1749px;
 opacity: 1;
 color: black;
 }
 
 
-.c4{
-left: 320px;
-top: 2039px;
-}
 
 .c4-prime{
-left: 320px;
-top: 2039px;
 opacity: 1;
 color: black;
 }
@@ -345,6 +345,7 @@ opacity: 1;
 .c2-prime:hover, .c1-prime:hover, .c3-prime:hover, .c4-prime:hover{
 opacity: 1;
 }
+
 
 footer{
 display: flex;
@@ -391,16 +392,15 @@ color: black;
 
 .image-restaurant{ 
 height: 275px;
-width: 375px;
-position: static;
+width: -moz-available;
 margin-top: 10px;
 }
 
 .menu{
 position: absolute;
 top: 283px;
-width: 335px;
-height: 1317px;
+width: -moz-available;
+height: auto;
 border-radius: 25px 25px;
 background: #F7F7F7;
 padding: 20px;
@@ -568,7 +568,7 @@ align-items: center;
 }
 
 .checkbar i:active{
-    animation: spin 2s;
+animation: spin 2ms 5s;
 }
 
 @keyframes spin {
@@ -616,6 +616,28 @@ padding-right: 115px;
 }
 
 
+@media (max-width : 768px) {
+
+.boite-restaurants{
+flex-direction: column;
+}
+
+    }
+
+
+
+@media (min-width: 767px) {
+    
+.fonction{
+flex-direction: row ;
+}
+
+.boite-restaurants{
+grid-template-columns: 1fr 1fr;
+}
+
+}
+/*
 
 @media (min-width: 768px) {
 
@@ -795,7 +817,7 @@ margin-right: 20px;
 /*menu*/
 
 
-
+/*
 .image-restaurant{
 width: 1440px;
 height: 456px;
@@ -913,7 +935,7 @@ display: flex;
 gap: 5px;
 }
 
-
+*/
 .entrees{
 animation: show 3s;
 }
